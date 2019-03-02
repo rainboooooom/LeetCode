@@ -4,25 +4,19 @@
 
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
 
-您可以假设除了数字 0 之外，这两个数都不会以 0 开头
+您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 
 """
 
-
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 class Solution:
-    def addTwoNumbers(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
-        result = ListNode()
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        result = ListNode(0)
         re = result # 用另一个变量来操作, result 用来记住链表头
         carry = 0
 

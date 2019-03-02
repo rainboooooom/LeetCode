@@ -4,12 +4,8 @@
 
 """
 
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
         d = dict()
         ans, i = 0, 0 # i用来记录每次字符串的起始位置
         for j, value in enumerate(s):
