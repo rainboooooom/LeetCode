@@ -25,10 +25,6 @@ class Solution:
             
             res = res.next
 
-        if l1:
-            res.next = l1
-
-        if l2:
-            res.next = l2
+        res.next = l1 if l1 else l2
 
         return head.next
