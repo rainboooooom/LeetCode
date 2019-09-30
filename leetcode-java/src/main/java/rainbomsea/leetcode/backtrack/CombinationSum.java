@@ -1,4 +1,4 @@
-package rainbomsea.leetcode.array;
+package rainbomsea.leetcode.backtrack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
