@@ -1,4 +1,6 @@
-package rainbomsea.leetcode.tree;
+package rainbomsea.leetcode.bfs;
+
+import rainbomsea.leetcode.tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;
