@@ -27,6 +27,7 @@ public class FindModeInBinarySearchTree {
 
     }
 
+    // 解析：二叉树的中序遍历其实就是一个升序排序
     private void dfs(TreeNode root) {
         if(root == null) {
             return;
