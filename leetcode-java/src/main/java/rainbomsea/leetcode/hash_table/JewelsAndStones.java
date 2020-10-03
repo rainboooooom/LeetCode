@@ -17,9 +17,9 @@ public class JewelsAndStones {
         int ans = 0;
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < J.length(); i++) {
-            map.put(J.charAt(j), 1);
+            map.put(J.charAt(i), 1);
         }
-        for (int i  = 0;  i < S.length(); i++) {s
+        for (int i  = 0;  i < S.length(); i++) {
             if(map.containsKey(S.charAt(i))) {
                 ans++;
             }
