@@ -1,6 +1,4 @@
-package rainbomsea.leetcode.string;
-
-import java.util.Locale;
+package rainbomsea.leetcode.dynamic_programming;
 
 /**
  * 91. 解码方法
