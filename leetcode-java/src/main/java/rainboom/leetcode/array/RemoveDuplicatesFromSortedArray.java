@@ -11,14 +11,16 @@ package rainboom.leetcode.array;
  */
 public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
-		int i = 0;
-		for (int j = 1; j < nums.length; j++) {
-			if(nums[i] != nums[j]) {
-				i++;
-			}
-			nums[i] = nums[j];
-			
+		int len = nums.length;
+		if(len == 0) {
+			return 0;
 		}
-    	return i+1;
+		int index = 1;
+		for(int i = 1; i < len; i++) {
+			if(nums[i] != nums[i-1]) {
+				nums[index++] = nums[i];
+			}
+		}
+		return index;
     }
 }
